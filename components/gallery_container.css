@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/aquire");
+
+:root {
+    /* color palette */
+    --bg-color: rgb(0, 0, 0);
+    --bg-color-light: rgb(28, 28, 28);
+    --bg-color-light1: rgb(48, 48, 48);
+    --main-color: rgb(255, 255, 255);
+    --main-color-dark: rgb(217, 217, 217);
+    --primary-color: rgb(129, 143, 235);
+    --primary-color-light: rgb(173, 179, 216);
+    --primary-color-dark: rgb(77, 84, 131);
+    --secondary-color: rgb(117, 183, 240);
+    --secondary-color-light: rgb(175, 209, 240);
+    --secondary-color-dark: rgb(85, 117, 145);
+    --danger-color: rgb(241, 89, 89);
+    --success-color: rgb(39, 224, 104);
+
+    /* font styles */
+    --font-bold: 800;
+    --font-size1: 1.3vw;
+    --font-size2: 1.7vw;
+    --font-size3: 2.3vw;
+    --font-size4: 2.9vw;
+    --font-size5: 3.7vw;
+
+
+
+    /* border radius */
+    --borderrad1: 0.5vw;
+    --borderrad2: 1vw;
+}
+
+/* fonts */
+.font_aquire {
+    font-family: "Aquire", sans-serif;
+}
+
+/* Styles for the gallery container */
+.gallery_container {
+    max-width: 60vw; /* Set your desired maximum width */
+    margin: 0 auto;
+}
+
+/* Styles for the gallery wrapper */
+.gallery_wrapper {
+    display: grid;
+    gap: 10px; /* Adjust this for spacing between images */
+    margin-bottom: 3vw; /* Add margin at the bottom of the gallery to create an indentation */
+}
+
+/* Styles for the individual images */
+.gallery_wrapper img {
+    width: 100%; /* Images take full width of their container */
+    height: 65vh; /* Images take full height of their container */
+    object-fit: cover;
+}
+
+.gallery_wrapper img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .gallery_wrapper {
+        grid-template-columns: repeat(1, 1fr); /* 1 image per row on mobile */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery_wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on tablets and iPads */
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery_wrapper {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row on computers */
+    }
+}

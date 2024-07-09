@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/aquire");
+
+:root {
+    /* color palette */
+    --bg-color: rgb(0, 0, 0);
+    --bg-color-light: rgb(46, 46, 46);
+    --main-color: rgb(255, 255, 255);
+    --main-color-dark: rgb(217, 217, 217);
+    --primary-color: rgb(129, 143, 235);
+    --primary-color-light: rgb(173, 179, 216);
+    --primary-color-dark: rgb(77, 84, 131);
+    --secondary-color: rgb(117, 183, 240);
+    --secondary-color-light: rgb(175, 209, 240);
+    --secondary-color-dark: rgb(85, 117, 145);
+    --danger-color: rgb(241, 89, 89);
+    --success-color: rgb(39, 224, 104);
+
+    /* font styles */
+    --font-bold: 800;
+    --font-size1: 1.3vw;
+    --font-size2: 1.7vw;
+    --font-size3: 2.3vw;
+    --font-size4: 2.9vw;
+    --font-size5: 3.7vw;
+    --font-size6: 4.7vw;
+
+
+
+    /* border radius */
+    --borderrad1: 0.5vw;
+    --borderrad2: 1vw;
+}
+
+@media (max-width: 767px) {
+    .header_container {
+        background-color: black;
+        display: flex;
+        height: 15vw;
+        padding: 2vw 5vw;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-left_container {
+        flex: 1;
+    }
+
+    .header-logo {
+        font-size: 5.7vw;
+    }
+
+    .header-right_container {
+        flex: 2;
+        position: relative;
+        right: 0;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-link_container {
+        margin-left: 4.5vw;
+        font-weight: var(--font-bold);
+        font-size: var(--font-size3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-link_container:last-child a {
+        background-color: var(--bg-color-light);
+        padding: 1.5vw;
+        border-radius: 2vw;
+    }
+
+    .header-link_container:last-child a:hover {
+        background-color: var(--primary-color);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header_container {
+        background-color: black;
+        display: flex;
+        height: 10vw;
+        padding: 2vw 5vw;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-left_container {
+        flex: 1;
+    }
+
+    .header-logo {
+        font-size: var(--font-size6);
+    }
+
+    .header-right_container {
+        flex: 2;
+        position: relative;
+        right: 0;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-link_container {
+        margin-left: 4vw;
+        font-weight: var(--font-bold);
+        font-size: var(--font-size3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-link_container:last-child a {
+        background-color: var(--bg-color-light);
+        padding: 1vw;
+        border-radius: var(--borderrad1);
+    }
+
+    .header-link_container:last-child a:hover {
+        background-color: var(--primary-color);
+    }
+}
+
+@media (min-width: 1024px) {
+    .header_container {
+        background-color: black;
+        display: flex;
+        height: 4vw;
+        padding: 2vw 4vw;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-left_container {
+        flex: 1;
+    }
+
+    .header-logo {
+        font-size: var(--font-size3);
+    }
+
+    .header-right_container {
+        flex: 2;
+        position: relative;
+        right: 0;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-link_container {
+        margin-left: 2vw;
+        font-weight: var(--font-bold);
+        font-size: var(--font-size1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-link_container:last-child a {
+        background-color: var(--bg-color-light);
+        padding: 0.6vw;
+        border-radius: var(--borderrad1);
+    }
+
+    .header-link_container:last-child a:hover {
+        background-color: var(--primary-color);
+    }
+}
+

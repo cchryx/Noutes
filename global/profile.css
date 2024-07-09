@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/aquire");
+
+:root {
+    /* color palette */
+    --bg-color: rgb(0, 0, 0);
+    --bg-color-light: rgb(28, 28, 28);
+    --bg-color-light1: rgb(48, 48, 48);
+    --bg-color-light2: rgb(64, 64, 64);
+    --main-color: rgb(255, 255, 255);
+    --main-color-dark: rgb(217, 217, 217);
+    --primary-color: rgb(129, 143, 235);
+    --primary-color-light: rgb(173, 179, 216);
+    --primary-color-dark: rgb(77, 84, 131);
+    --secondary-color: rgb(117, 183, 240);
+    --secondary-color-light: rgb(175, 209, 240);
+    --secondary-color-dark: rgb(85, 117, 145);
+    --danger-color: rgb(241, 89, 89);
+    --success-color: rgb(39, 224, 104);
+
+    /* font styles */
+    --font-bold: 800;
+    --font-size1: 1.3vw;
+    --font-size2: 1.7vw;
+    --font-size3: 2.3vw;
+    --font-size4: 2.9vw;
+    --font-size5: 3.7vw;
+
+
+
+    /* border radius */
+    --borderrad1: 0.5vw;
+    --borderrad2: 1vw;
+}
+
+/* fonts */
+.font_aquire {
+    font-family: "Aquire", sans-serif;
+}
+
+* {
+    font-family: "Oxygen", sans-serif;
+    color: var(--main-color);
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: var(--bg-color-light2);
+}
+
+hr {
+    height: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-color-light2);
+}
+
+.lightbox_container {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox_container .close_container {
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+}
+
+.lightbox_container .close_container:hover {
+    cursor: pointer;
+}
+
+.lightbox_container .close_container i {
+    font-size: 40px;
+}
+
+.lightbox_image {
+    max-height: 100vh;
+    max-width: 80vw;
+    position: relative;
+}
+
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media (min-width: 1024px) {
+    .body_container {
+        margin-left: 20vw;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .body_container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .body_wrapper {
+        padding: 2vw 5vw;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s linear;
+    }
+
+    /* profile noute */
+    .profile_container {
+        width: 50vw;
+        background-color: var(--bg-color-light);
+        border-radius: var(--borderrad2);
+        margin-bottom: 3vw;
+        overflow: hidden;
+    }
+
+    .profile_wrapper {
+        padding: 2vw;
+        display: flex;
+    }
+
+    .profile_left {
+        margin-right: 2vw;
+    }
+
+    .profile_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile_picture {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+    }
+
+    .profile_username {
+        font-size: var(--font-size3);
+        font-weight: var(--font-bold);
+    }
+
+    .profile_right ul {
+        margin-top: 1.5vw;
+        display: flex; 
+    }
+
+    .profile_right ul li {
+        margin-right: 2vw;
+    }
+}
+
+
